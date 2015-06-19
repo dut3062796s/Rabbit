@@ -47,18 +47,4 @@ namespace Rabbit.Util.Extensions {
 
 
     }
-    public static class ConvertExtensions {
-        public static T Convert<T>(this string value, T defaultValue = default(T)) {
-            return ConvertUtil.To(value, defaultValue);
-        }
-        public static T Convert<T>(this Enum value, T defaultValue = default(T)) {
-            return ConvertUtil.To(value, defaultValue);
-        }
-        public static T Convert<T>(this int value, T defaultValue = default(T)) {
-            return ConvertUtil.To(value, defaultValue);
-        }
-        public static T Convert<T>(this object value, T defaultValue = default(T)) {
-            return ConvertUtil.To(value, defaultValue);
-        }
-    }
 }

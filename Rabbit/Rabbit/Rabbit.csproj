@@ -49,6 +49,7 @@
     <Compile Include="Logging\NullLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\ConvertUtil.cs" />
+    <Compile Include="Util\Extensions\ConvertExtensions.cs" />
     <Compile Include="Util\Extensions\ObjectExtensions.cs" />
   </ItemGroup>
   <ItemGroup />
