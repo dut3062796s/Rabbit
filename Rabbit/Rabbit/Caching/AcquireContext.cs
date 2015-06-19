@@ -38,7 +38,7 @@ namespace Rabbit.Caching
         /// <summary>
         /// 监控动作。
         /// </summary>
-        public Action<IVolatileToken> Monitor { get; }
+        public Action<IVolatileToken> Monitor { get; private set; }
     }
 
     /// <summary>
@@ -58,6 +58,6 @@ namespace Rabbit.Caching
         /// <summary>
         /// 监控动作。
         /// </summary>
-        public Action<IVolatileToken> Monitor { get; }
+        public Action<IVolatileToken> Monitor { get; private set;}
     }
 }
