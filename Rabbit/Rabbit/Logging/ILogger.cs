@@ -8,11 +8,6 @@ namespace Rabbit.Logging
     public enum LogLevel
     {
         /// <summary>
-        /// ×·×Ù¡£
-        /// </summary>
-        Trace,
-
-        /// <summary>
         /// µ÷ÊÔ¡£
         /// </summary>
         Debug,
