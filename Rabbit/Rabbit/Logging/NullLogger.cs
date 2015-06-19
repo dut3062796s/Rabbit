@@ -1,12 +1,10 @@
 using System;
 
-namespace Rabbit.Logging
-{
+namespace Rabbit.Logging {
     /// <summary>
     /// 一个空的日志记录器。
     /// </summary>
-    public class NullLogger : ILogger
-    {
+    public class NullLogger : ILogger {
         #region Field
 
         #endregion Field
@@ -16,7 +14,11 @@ namespace Rabbit.Logging
         /// <summary>
         /// 记录器实例。
         /// </summary>
-        public static ILogger Instance { get; } = new NullLogger();
+        public static ILogger Instance {
+            get {
+                return new NullLogger();
+            }
+        }
 
         #endregion Property
 
@@ -27,8 +29,7 @@ namespace Rabbit.Logging
         /// </summary>
         /// <param name="level">日志等级。</param>
         /// <returns>如果开启返回true，否则返回false。</returns>
-        public bool IsEnabled(LogLevel level)
-        {
+        public bool IsEnabled(LogLevel level) {
             return false;
         }
 
@@ -39,8 +40,7 @@ namespace Rabbit.Logging
         /// <param name="exception">异常。</param>
         /// <param name="format">格式。</param>
         /// <param name="args">参数。</param>
-        public void Log(LogLevel level, Exception exception, string format, params object[] args)
-        {
+        public void Log(LogLevel level, Exception exception, string format, params object[] args) {
         }
 
         #endregion Implementation of ILogger
