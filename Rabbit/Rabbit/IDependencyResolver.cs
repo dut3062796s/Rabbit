@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Rabbit.Util.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Rabbit.Utility.Extensions;
 
 namespace Rabbit
 {

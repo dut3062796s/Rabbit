@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rabbit.Utility.Extensions
+namespace Rabbit.Util.Extensions
 {
     /// <summary>
     /// 对象扩展方法。
