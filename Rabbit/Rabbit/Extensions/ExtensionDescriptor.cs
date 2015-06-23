@@ -16,5 +16,9 @@ namespace Rabbit.Extensions
         /// 特性集合。
         /// </summary>
         public IEnumerable<FeatureDescriptor> Features { get; set; }
+
+        public string Path { get; set; }
+
+        public string Name { get; set; }
     }
 }

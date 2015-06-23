@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
@@ -51,12 +52,15 @@
     <Reference Include="System.Runtime">
       <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\ContainerBuilder.cs" />
     <Compile Include="Caching\AcquireContext.cs" />
     <Compile Include="Caching\CacheModule.cs" />
     <Compile Include="Caching\IAsyncTokenProvider.cs" />
@@ -95,6 +99,8 @@
     <Compile Include="Extensions\Feature.cs" />
     <Compile Include="Extensions\FeatureDescriptor.cs" />
     <Compile Include="Extensions\Folders\IExtensionFolders.cs" />
+    <Compile Include="Extensions\Folders\IExtensionHarvester.cs" />
+    <Compile Include="Extensions\Folders\Impl\DefaultExtensionHarvester.cs" />
     <Compile Include="Extensions\IExtensionManager.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -124,6 +130,7 @@
     <Compile Include="Util\ConvertUtil.cs" />
     <Compile Include="Util\Extensions\ConvertExtensions.cs" />
     <Compile Include="Util\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Util\Extensions\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
