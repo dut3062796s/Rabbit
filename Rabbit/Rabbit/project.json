@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Rabbit",
+  "authors": [ "majian" ],
+  "tags": [ "RabbitHub","Rabbit" ],
+  "projectUrl": "http://www.rabbithub.com/",
+  "licenseUrl": "https://github.com/RabbitTeam/Rabbit/blob/master/LICENSE",
+
+  "dependencies": {
+    "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
+    "Microsoft.Framework.Caching.Interfaces": "1.0.0-beta4",
+    "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
+    "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
+    "Microsoft.Framework.Logging": "1.0.0-beta4"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Collections": "4.0.10-beta-22816",
+        "System.Linq": "4.0.0-beta-22816",
+        "System.Threading": "4.0.10-beta-22816",
+        "Microsoft.CSharp": "4.0.0-beta-22816"
+      }
+    }
+  }
+}
