@@ -9,7 +9,7 @@
   "dependencies": {
     "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
     "Microsoft.Framework.Caching.Interfaces": "1.0.0-beta4",
-    "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
+    "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
     "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
     "Microsoft.Framework.Logging": "1.0.0-beta4"
   },
